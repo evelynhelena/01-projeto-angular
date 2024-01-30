@@ -1,0 +1,44 @@
+<p>home works!</p>
+
+<h1 *ngIf="title; else mensagemPadrao">{{ title }}</h1>
+<ng-template #mensagemPadrao><h1>Teste</h1></ng-template>
+
+<img [src]="statusLampada ? lampadaApagada : lampadaAcesa" />
+
+<button (click)="handleAcender()">
+  {{ statusLampada ? "Acender" : "Apagar" }}
+</button>
+
+<input [(ngModel)]="title" />
+<!-- O [] usado na interpolação é mais usado para modificar uma propriedade 
+especifica do html nessa caso o (src) já se fosse escrever algo em tela, o ideal é utlizar o {{}}-->
+<!-- <button (click)="mudarTexto()">Mudar texto</button> -->
+<div>
+  <!--   <button (click)="somaUm()">Soma um</button> -->
+  <!--   <span>{{contador}}</span> -->
+</div>
+
+<span [ngSwitch]="statusLampada">
+  <p *ngSwitchCase="true">Esse é o verdadeito</p>
+  <p *ngSwitchCase="false">Esse é o falso</p>
+  <p *ngSwitchDefault>Esse é o default</p>
+</span>
+
+<table>
+    <th>Nome</th>
+    <th>Sexo</th>
+    <th>Idade</th>
+    <th>Aniversário</th>
+    <th>Salário</th>
+  
+    <tr *ngFor="let client of clients">
+      <td>{{client.name | uppercase}}</td>
+      <td>{{client.gender | sexo}}</td>
+      <td>{{client.age}}</td>
+      <td>{{client.birthDay | date:'dd/MM/yyyy'}}</td>
+      <td>{{ client.salario | currency: "BRL"}}</td>
+    </tr>
+  </table>
+
+
+<span>{{clients | json}}</span>

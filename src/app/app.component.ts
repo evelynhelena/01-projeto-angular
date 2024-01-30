@@ -5,7 +5,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements
+export class AppComponent/* implements
   OnInit,
   OnChanges,
   DoCheck,
@@ -13,14 +13,39 @@ export class AppComponent implements
   AfterContentInit,
   AfterViewInit,
   AfterContentChecked,
-  AfterViewChecked {
-  title = 'projeto-1';
-  contador = 0;
+  AfterViewChecked */ {
 
-  constructor() {
-    console.log('Componente constructor');
-  }
-  ngAfterContentChecked(): void {
+  
+
+
+  // 4 tipos de data Binding
+  // 01 - Interporlação {{title}}
+
+  // Property bind <img [src]="imgUrl">
+
+  // Event biding <button (click)="chamarFuncao()">
+
+  // Two-way databinding <input [(ngModel)]="title"/>
+
+  /* ------------------------------------------------------------------------ */
+
+  // DIRETIVAS
+  /* 01 - ngIf usando complemento else, usamos para exibir 
+  ou ocultar elementos tomado por decisão logica */
+
+  // 02 ngSwitch 
+
+  // 03 - Diretivas esctruturais
+
+  // *ngFor
+
+  /* ------------------------------------------------------------------------ */
+
+  // Pipes
+
+  /* ---------------------------------------------------------------------------------- */
+
+  /* ngAfterContentChecked(): void {
     console.log('Componente ngAfterContentChecked');
   }
   ngAfterViewChecked(): void {
@@ -53,6 +78,6 @@ export class AppComponent implements
 
   somaUm() {
     this.contador += 1;
-  }
+  } */
 
 }
