@@ -1,23 +1,9 @@
-.topnav{
-    background-color: #333;
-    display: flex;
-    gap: 30px;
-    overflow: hidden;
-    padding: 20px;
+.example-spacer {
+    flex: 1 1 auto;
 
-    a{
-        color: #fff;
-        display: block;
-        cursor: pointer;
-        text-decoration: none;
-
-        &:hover{
-            color: #e0dcdc;
-            text-decoration: underline;
-        }
-        
-        &.active{
-            color: red;
-        }
+}
+a {
+    &.active{
+        background-color: #2c3a85;
     }
 }
