@@ -19,29 +19,7 @@ export interface Pessoas extends Array<Pessoa>{}
 export class HomeComponent {
 
 
-  clients: Pessoas = [
-    {
-      name: "Cleiton",
-      age: 30,
-      gender: 'M',
-      birthDay: new Date('10/15/1969'),
-      salario:1000
-    },
-    {
-      name: "Maria",
-      age: 28,
-      gender: 'F',
-      birthDay: new Date('08/13/1998'),
-      salario: 1500
-    },
-    {
-      name: "Clara",
-      age: 21,
-      gender: 'F',
-      birthDay: new Date('09/12/1933'),
-      salario:10200
-    }
-  ];
+  clients!: Pessoas;
 
   displayedColumns: string[] = ['name', 'age', 'gender', 'birthDay', 'salario'];
   dataSource!: MatTableDataSource<Pessoa>;

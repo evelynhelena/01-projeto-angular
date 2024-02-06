@@ -1,0 +1,57 @@
+{
+    "produtos":  [
+      {
+        "nome": "Teclado Gamer",
+        "descrição": "Teclado RGB, Swith Blue",
+        "imgUrl": "",
+        "price": "150",
+        "estoque": "12"
+      },
+      {
+        "nome": "Mouse",
+        "descrição": "Mouse logtech rosa",
+        "imgUrl": "",
+        "price": "100",
+        "estoque": "20"
+      },
+      {
+        "nome": "Notebook",
+        "descrição": "Notebook apple ouro rose",
+        "imgUrl": "",
+        "price": "7500",
+        "estoque": "20"
+      },
+      {
+        "nome": "Cadeira Gamer",
+        "descrição": "Cadeira Gamer rosa",
+        "imgUrl": "",
+        "price": "800",
+        "estoque": "20"
+      }
+    ],
+
+    "cliente":[
+      {
+        "name": "Cleiton",
+        "age": 30,
+        "gender": "M",
+        "birthDay": "10/15/1969",
+        "salario":1000
+      },
+      {
+        "name": "Maria",
+        "age": 28,
+        "gender": "F",
+        "birthDay": "08/13/1998",
+        "salario": 1500
+      },
+      {
+        "name": "Clara",
+        "age": 21,
+        "gender": "F",
+        "birthDay": "09/12/1933",
+        "salario":10200
+      }
+    ]
+  }
+  
